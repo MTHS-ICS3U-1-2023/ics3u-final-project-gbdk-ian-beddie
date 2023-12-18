@@ -19,14 +19,14 @@ rm /workspaces/ICS3U-Final-Project-GBDK-mr-coxall/simulator/rom/game.gb
 
 Also update this README.md file to get the Mr Coxall Super Linter Working.
 ```
-[![Mr Coxall's Super Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/<OWNER>/<REPOSITORY>/actions)
+[![Mr Coxall's Super Linter](https://github.com/ian-beddie/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/ian-beddie/actions)
 to
 [![Mr Coxall's Super Linter](https://github.com/MTHS-ICS3U-2-2022/mr-coxall/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/MTHS-ICS3U-2-2022/mr-coxall/actions)
 ```
 
 Then ensure you have the "Live Server" extensions installed, so that you can run the GameBoy simulator: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
-[![Mr Coxall's Super Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/<OWNER>/<REPOSITORY>/actions)
+[![Mr Coxall's Super Linter](https://github.com/ian-beddie/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/ian-beddie/actions)
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](./LICENSE)
 
