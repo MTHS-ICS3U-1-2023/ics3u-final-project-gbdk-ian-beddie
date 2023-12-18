@@ -1,4 +1,3 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=13262020)
 <h1 align="center"> ICS3U Codespace Startup - GBDK </h1>
 <img src="https://github.com/Mr-Coxall/ICS3U-Codespace-Startup-GBDK/raw/main/images/GBDK.png" alt="github-codespaces" class="center">
 
@@ -26,8 +25,10 @@ to
 
 Then ensure you have the "Live Server" extensions installed, so that you can run the GameBoy simulator: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
-[![Mr Coxall's Super Linter](https://github.com/ian-beddie/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/ian-beddie/actions)
+[![Mr Coxall's Super Linter](https://github.com/MTHS-ICS3U-1-2023/ics3u-final-project-gbdk-ian-beddie/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/MTHS-ICS3U-1-2023/ics3u-final-project-gbdk-ian-beddie/actions)
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](./LICENSE)
+
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=13262020)
 
 <h1 style="color:red;font-size:150px;text-align:center;"> 🕹️🎮🥷 </h1>
