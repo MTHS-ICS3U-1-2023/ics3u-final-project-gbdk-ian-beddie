@@ -12,7 +12,7 @@ It will take ~ 10 minutes to build your server, be patient and wait while it is 
 
 Once running ENSURE you go into the ```compile.sh``` file and add in your GitHub owner name on lines 10 & 16. For example
 ```
-rm /workspaces/ICS3U-Final-Project-GBDK-{github login}/simulator/rom/game.gb
+rm /workspaces/ICS3U-Final-Project-GBDK-ian-beddie/simulator/rom/game.gb
 to
 rm /workspaces/ICS3U-Final-Project-GBDK-mr-coxall/simulator/rom/game.gb
 ```
