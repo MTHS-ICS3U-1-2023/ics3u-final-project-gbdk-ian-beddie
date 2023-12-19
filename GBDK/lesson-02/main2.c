@@ -19,7 +19,7 @@ int main() {
     move_meta_sprite(0, 76, 120);
 
     SHOW_SPRITES;
-    DISPLAYS_ON;
+    DISPLAY_ON;
 
     return 0;
 }

@@ -15,7 +15,7 @@ int main() {
 
     set_sprite_tile(0, 15);
 
-    move_sprite(0, 88, 78)
+    move_sprite(0, 88, 78);
 
     set_sprite_tile(1, 5);
     set_sprite_tile(2, 10);
