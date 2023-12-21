@@ -50,7 +50,6 @@ void main() {
             scroll_meta_sprite(0, 0, 1);
         }
 
-
         scroll_bkg(0, -1);
 
         wait_vbl_done();
