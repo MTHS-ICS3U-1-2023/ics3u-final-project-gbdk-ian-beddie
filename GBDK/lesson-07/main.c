@@ -30,7 +30,7 @@ screen_t splash() {
     unsigned int timeCounter = 0;
 
     printf("\n\n\n\n\n");
-    printf("    MT Game Studios");
+    printf("   MT Game Studios");
     printf("        Presents");
     printf("\n\n\n\n\n\n");
     printf("    Space Aliens");
