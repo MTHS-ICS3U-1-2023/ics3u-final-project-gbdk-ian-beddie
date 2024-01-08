@@ -83,12 +83,24 @@ screen_t game() {
     const int FIXED_Y_POSITION_OF_SHIP = 144;
     int shipXPosition = 76;
     int shipYPosition = FIXED_Y_POSITION_OF_SHIP;
+    int missiles[5][3] = {
+                            {5, 255, 255},
+                            {6, 255, 255},
+                            {7, 255, 255},
+                            {8, 255, 255},
+                            {9, 255, 255},
+    };
 
     set_sprite_data(0, 16, SpaceAliens);
 
     set_meta_sprite_tile(0, 1, 2, 3, 4);
 
     move_meta_sprite(0, shipXPosition, shipYPosition);
+
+    for (int laserCounter = 0; laserCounter < 5; laserCounter++);
+        set_sprite_tile(missiles[laserCounter][0], 6)
+    }
+
 
     set_bkg_data(0, 16, SpaceAliens);
 
