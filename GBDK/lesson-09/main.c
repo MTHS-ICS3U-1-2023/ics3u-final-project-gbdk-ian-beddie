@@ -97,10 +97,15 @@ screen_t game() {
 
     move_meta_sprite(0, shipXPosition, shipYPosition);
 
-    for (int laserCounter = 0; laserCounter < 5; laserCounter++);
-        set_sprite_tile(missiles[laserCounter][0], 6)
+    for (int laserCounter = 0; laserCounter < 5; laserCounter++) {
+        set_sprite_tile(missiles[laserCounter][0], 6);
     }
 
+    for (int laserCounter = 0; laserCounter < 5; laserCounter++) {
+        move_sprite(missiles[laserCounter][0],
+                    missiles[laserCounter][1],
+                    missiles[laserCounter][2]);
+    }
 
     set_bkg_data(0, 16, SpaceAliens);
 
@@ -134,20 +139,49 @@ screen_t game() {
         if (joypadData & J_A) {
             if (aButtonJustPressed == true) {
                 aButtonStillPressed = true;
-            }
-            else {
-                aButtonJustPressed = true;
+            } else {
 
-                NR10_REG = 0x16;
-                NR11_REG = 0x82;
-                NR12_REG = 0x69;
-                NR13_REG = 0x59;
-                NR14_REG = 0xC6;
+                for (int laserCounter = 0; laserCounter < 5; laserCounter++) {
+                    if (missiles[laserCounter][1] >=255) {
+                        missiles[laserCounter][1] = shipXPosition + 4;
+                        missiles[laserCounter][1] = 136;
+                        move_sprite(missiles[laserCounter][0],
+                                    missiles[laserCounter][1],
+                                    missiles[laserCounter][2]);
+
+                        aButtonJustPressed = true;
+
+                        NR10_REG = 0x16;
+                        NR11_REG = 0x82;
+                        NR12_REG = 0x69;
+                        NR13_REG = 0x59;
+                        NR14_REG = 0xC6;
+
+                        break;
+                    }
+                }
             }
         }
         else {
             aButtonJustPressed = false;
             aButtonStillPressed = false;
+        }
+
+        for (int laserCounter = 0; laserCounter < 5; laserCounter++) {
+            if (missiles[laserCounter][1] < 255) {
+                missiles[laserCounter][2]--;
+                move_sprite(missiles[laserCounter][0],
+                            missiles[laserCounter][1],
+                            missiles[laserCounter][2]);
+
+                if (missiles[laserCounter][2] < 0) {
+                    missiles[laserCounter][1] = 255;
+                    missiles[laserCounter][1] < 255;
+                    move_sprite(missiles[laserCounter][0],
+                                missiles[laserCounter][1],
+                                missiles[laserCounter][2]);
+                }
+            }
         }
 
         scroll_bkg(0, -1);
