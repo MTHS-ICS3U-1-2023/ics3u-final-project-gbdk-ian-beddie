@@ -370,7 +370,7 @@ _HEADER_LCD0           00000000    00000003 =           3. bytes (ABS,CON)
 Files Linked                              [ module(s) ]
 
 /opt/gbdk/lib/gb/crt0.o                   [ Runtime ]
-/tmp/lcc142350.o                          [ main ]
+/tmp/lcc161280.o                          [ main ]
 
 
 Libraries Linked                          [ object file ]

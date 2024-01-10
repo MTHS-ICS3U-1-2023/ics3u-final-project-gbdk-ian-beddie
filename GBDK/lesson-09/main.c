@@ -142,9 +142,9 @@ screen_t game() {
             } else {
 
                 for (int laserCounter = 0; laserCounter < 5; laserCounter++) {
-                    if (missiles[laserCounter][1] >=255) {
+                    if (missiles[laserCounter][1] >= 255) {
                         missiles[laserCounter][1] = shipXPosition + 4;
-                        missiles[laserCounter][1] = 136;
+                        missiles[laserCounter][2] = 136;
                         move_sprite(missiles[laserCounter][0],
                                     missiles[laserCounter][1],
                                     missiles[laserCounter][2]);
@@ -176,7 +176,7 @@ screen_t game() {
 
                 if (missiles[laserCounter][2] < 0) {
                     missiles[laserCounter][1] = 255;
-                    missiles[laserCounter][1] < 255;
+                    missiles[laserCounter][2] = 255;
                     move_sprite(missiles[laserCounter][0],
                                 missiles[laserCounter][1],
                                 missiles[laserCounter][2]);
@@ -203,7 +203,7 @@ void main() {
             current_screen = splash();
         }
         else if (current_screen == START) {
-            current_screen = game();
+            current_screen = start();
         }
         else if (current_screen == GAME) {
             current_screen = game();
